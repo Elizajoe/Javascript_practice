@@ -1,0 +1,93 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Practice</title>
+  <script src=sayHello.js> 
+  
+ </script>
+
+  
+</head>
+<body>
+<script>document.write("Hello World")</script>
+<p> This is Neethi's practice page</p><br>
+<input type ="button" onclick=sayHello("Neethi","16") value="hello Neethi"/>
+<br>
+<script> 
+	var age = 12
+	if(age  >18){
+	document.write("eligible to drive");
+	}
+	else if (age >15){
+	document.write("start learning to drive")}
+	else{
+	document.write("sorry kiddo")
+	}
+</script>
+<br>
+<script>
+	var grade = "A"
+	switch(grade){
+	case "A" : document.write("great job")
+	break;
+	case "B" :document.write("good work")
+	break;
+	case "C" :document.write("work hard")
+	break;
+	case "D" : document.write("call your parents")
+	break;
+	default :document.write("you missed your exam");
+	
+	}
+</script>
+<br>
+<script>
+	var count =0;
+	while(count<10){
+	document.write("countdown : " + count +"<br>");
+	count++;
+	}
+</script>
+ended while loop <br>
+
+<script>
+	do{
+	document.write("countdown : " + count +"<br>");
+	count--;
+	}while(count>0)
+</script>
+ended do loop <br>
+<script>
+
+	for(count=1;count <10;count++){
+		document.write("countdown : " + count +"<br>");
+	}
+
+</script>
+ended for loop
+<script> 
+	var aProperty
+	for(aProperty in navigator){
+		//document.write(aProperty +"<br>")
+	}
+</script>
+end of for..in loop
+<script>
+ function over(){
+	 document.write("Mouse over);
+ }
+ 
+ function out(){
+	 document.write("Mouse out);
+ }
+</script>
+<p>Bring your mouse inside the division to see the result:</p>
+      
+      <div onmouseover="over()" onmouseout="out()">
+         <h2> This is inside the division </h2>
+      </div>
+
+  </body>
+</html>
